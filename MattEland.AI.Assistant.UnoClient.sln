@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MattEland.AI.Assistant.UnoClient", "MattEland.AI.Assistant.UnoClient\MattEland.AI.Assistant.UnoClient.csproj", "{D5696A39-CF21-4536-9EB6-366196D90EB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MattEland.AI.Assistant.UnoClient.UITests", "MattEland.AI.Assistant.UnoClient.UITests\MattEland.AI.Assistant.UnoClient.UITests.csproj", "{BE6DA64D-A8C0-CC8A-8F0B-F85D15F0C618}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MattEland.AI.Assistant.UnoClient.Tests", "MattEland.AI.Assistant.UnoClient.Tests\MattEland.AI.Assistant.UnoClient.Tests.csproj", "{DDE68C5E-C2CB-14F1-2EDA-31BA0449DBF0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6DF72652-D3CC-4FD8-B69F-BF05680B7A75}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		Directory.Packages.props = Directory.Packages.props
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MattEland.AI.Assistant.Domain", "MattEland.AI.Assistant.Domain\MattEland.AI.Assistant.Domain.csproj", "{78ACBACF-25A4-4F26-96D6-EAE53FB41711}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5696A39-CF21-4536-9EB6-366196D90EB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5696A39-CF21-4536-9EB6-366196D90EB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5696A39-CF21-4536-9EB6-366196D90EB6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D5696A39-CF21-4536-9EB6-366196D90EB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5696A39-CF21-4536-9EB6-366196D90EB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5696A39-CF21-4536-9EB6-366196D90EB6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BE6DA64D-A8C0-CC8A-8F0B-F85D15F0C618}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE6DA64D-A8C0-CC8A-8F0B-F85D15F0C618}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE6DA64D-A8C0-CC8A-8F0B-F85D15F0C618}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BE6DA64D-A8C0-CC8A-8F0B-F85D15F0C618}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE6DA64D-A8C0-CC8A-8F0B-F85D15F0C618}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE6DA64D-A8C0-CC8A-8F0B-F85D15F0C618}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DDE68C5E-C2CB-14F1-2EDA-31BA0449DBF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE68C5E-C2CB-14F1-2EDA-31BA0449DBF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE68C5E-C2CB-14F1-2EDA-31BA0449DBF0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DDE68C5E-C2CB-14F1-2EDA-31BA0449DBF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE68C5E-C2CB-14F1-2EDA-31BA0449DBF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDE68C5E-C2CB-14F1-2EDA-31BA0449DBF0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{78ACBACF-25A4-4F26-96D6-EAE53FB41711}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78ACBACF-25A4-4F26-96D6-EAE53FB41711}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78ACBACF-25A4-4F26-96D6-EAE53FB41711}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78ACBACF-25A4-4F26-96D6-EAE53FB41711}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BE6DA64D-A8C0-CC8A-8F0B-F85D15F0C618} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{DDE68C5E-C2CB-14F1-2EDA-31BA0449DBF0} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67472A6F-ACA0-405C-A715-722EFC4BA92D}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,40 @@
+﻿<Page x:Class="MattEland.AI.Assistant.UnoClient.Presentation.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:MattEland.AI.Assistant.UnoClient.Presentation"
+      xmlns:uen="using:Uno.Extensions.Navigation.UI"
+      xmlns:utu="using:Uno.Toolkit.UI"
+      xmlns:um="using:Uno.Material" xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+      NavigationCacheMode="Required"
+      Background="{ThemeResource BackgroundBrush}" d:DataContext="{d:DesignInstance local:MainViewModel }">
+    <ScrollViewer>
+        <Grid utu:SafeArea.Insets="VisibleBounds">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <utu:NavigationBar Content="{Binding Title}" />
+
+            <StackPanel Grid.Row="1"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Center"
+            Margin="8"
+            Spacing="16">
+                <TextBlock Text="{Binding Response}"
+                           AutomationProperties.AutomationId="ResponseTextBlock"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Margin="8" />
+
+                <TextBox Text="{Binding Message, Mode=TwoWay}"
+                         utu:CommandExtensions.Command="{Binding Chat}"
+                         PlaceholderText="Enter a message" />
+                <Button Content="Send"
+                        AutomationProperties.AutomationId="ChatButton"
+                        Command="{Binding Chat}" />
+
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Page>

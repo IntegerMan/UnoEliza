@@ -1,0 +1,10 @@
+{
+  "background_color": "#ffffff",
+  "description": "MattEland.AI.Assistant.UnoClient",
+  "display": "standalone",
+  "name": "MattEland.AI.Assistant.UnoClient",
+  "short_name": "MattEland.AI.Assistant.UnoClient",
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "scope": "/"
+}
